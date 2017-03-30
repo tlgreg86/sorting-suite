@@ -1,6 +1,6 @@
 let arr1 = [4, 3, 2, 1]
 
-let bubbleSort = (arr) => {
+export const bubbleSort = (arr) => {
 
   for (let i = 0; i <= arr.length - 1; i++) {
     for (let j = 0; j <= arr.length - (i + 1); j++) {
@@ -16,6 +16,3 @@ let bubbleSort = (arr) => {
 }
 
 bubbleSort(arr1)
-
-
-export default bubbleSort;

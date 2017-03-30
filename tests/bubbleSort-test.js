@@ -1,5 +1,5 @@
 import { assert } from 'chai';
-import bubbleSort from '../scripts/bubbleSort';
+import { bubbleSort } from '../scripts/bubbleSort';
 import { generateRandomNumber } from '../scripts/randomNumberGenerator.js'
 
 describe('Bubble Sort', () => {

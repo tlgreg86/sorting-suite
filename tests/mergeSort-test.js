@@ -1,5 +1,5 @@
 import { assert } from 'chai';
-import mergeSort from '../scripts/mergeSort';
+import { mergeSort } from '../scripts/mergeSort';
 import { generateRandomNumber } from '../scripts/randomNumberGenerator.js'
 
 describe('Merge Sort', () => {

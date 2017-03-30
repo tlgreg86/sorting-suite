@@ -1,5 +1,5 @@
 import { assert } from 'chai';
-import insertionSort from '../scripts/insertionSort';
+import { insertionSort } from '../scripts/insertionSort';
 import { generateRandomNumber } from '../scripts/randomNumberGenerator.js'
 
 describe('Insertion Sort', () => {

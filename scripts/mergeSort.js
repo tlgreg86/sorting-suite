@@ -1,6 +1,6 @@
 let arr1 = [6, 5, 4, 3, 2, 1]
 
-function mergeSort(arr) {
+export const mergeSort = (arr) => {
   var length = arr.length;
 
   if (length < 2) {
@@ -13,18 +13,16 @@ function mergeSort(arr) {
   return merge(mergeSort(left), mergeSort(right));
 }
 
-
 mergeSort(arr1)
 
+function merge (left, right) {
+  let result      = []
+  let leftLength  = left.length
+  let rightLength = right.length
+  let leftArr     = 0
+  let rightArr    = 0;
 
-function merge(left, right) {
-  let result    = []
-  let lLen      = left.length
-  let rLen      = right.length
-  let leftArr   = 0
-  let rightArr  = 0;
-
-  while (leftArr < lLen && rightArr < rLen) {
+  while (leftArr < leftLength && rightArr < rightLength) {
     if (left[leftArr] < right[rightArr]) {
       result.push(left[leftArr++]);
     } else {
@@ -33,8 +31,3 @@ function merge(left, right) {
   }
   return result.concat(left.slice(leftArr)).concat(right.slice(rightArr));
 }
-
-
-
-
-export default mergeSort;

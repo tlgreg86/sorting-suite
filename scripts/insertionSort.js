@@ -1,6 +1,6 @@
 let arr1 = [4, 3, 2, 1]
 
-let insertionSort = (arr) => {
+export const insertionSort = (arr) => {
 
   for (var i = 1; i < arr.length; i++) {
 
@@ -18,5 +18,3 @@ let insertionSort = (arr) => {
 }
 
 insertionSort(arr1)
-
-export default insertionSort;
